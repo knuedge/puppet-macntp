@@ -52,12 +52,12 @@
 # Brian Warsing <bcw@sfu.ca>
 class macntp (
 
-  $enable  = undef,
+  $enable  = true,
   $servers = ['time.apple.com']
 
 ) {
 
-  unless $enable == undef {
+  unless $enable == false {
 
     validate_bool  ($enable)
     validate_array ($servers)
