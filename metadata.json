@@ -1,0 +1,36 @@
+{
+  "name": "dschaaff-macntp",
+  "version": "0.1.0",
+  "author": "Daniel Schaaff",
+  "summary": "Manage ntp config on macOS",
+  "license": "MIT",
+  "source": "https://github.com/knuedge/puppet-macntp.git",
+  "project_page": "https://github.com/knuedge/puppet-macntp.git",
+  "issues_url": "https://github.com/knuedge/puppet-macntp/issues",
+  "tags": ["ntp","apple"],
+  "dependencies": [
+    {
+      "name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemrelease": [
+        "14",
+        "15",
+        "16"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">=3.0.0 <4.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">=3.0.0 <4.0"
+    }
+  ]
+}

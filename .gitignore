@@ -1,0 +1,26 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+tags
+
+## fixtures
+fixtures
+
+## junit
+results.xml
+
+## Bundler
+Gemfile.lock
+.bundle
+vendor/
