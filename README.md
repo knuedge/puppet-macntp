@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/knuedge/puppet-macntp.svg?branch=master)](https://travis-ci.org/knuedge/puppet-macntp)
+
 # macntp
 
 This was forked from the [managedmac module](https://github.com/dayglojesus/managedmac).
