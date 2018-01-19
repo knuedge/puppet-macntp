@@ -62,7 +62,13 @@ class macntp (
     validate_bool  ($enable)
     validate_array ($servers)
 
+    # High Siera replaced ntpd with timed - still has the legacy app installed, but renamed
     $ntp_service_label = 'org.ntp.ntpd'
+    if defined('$::macosx_productversion_major') {
+      if $facts['macosx_productversion_major'] == '10.13' {
+        $ntp_service_label = 'org.ntp.ntpd-legacy'
+      }
+    }
     $ntp_conf_default  = 'server time.apple.com'
     $ntp_conf_template = inline_template("<%= (@servers.collect {
       |x| ['server', x].join('\s') }).join('\n') %>")
