@@ -68,6 +68,7 @@ class macntp (
         $ntp_service_label = 'org.ntp.ntpd-legacy'
       } else {
         $ntp_service_label = 'org.ntp.ntpd'
+      }
     } else {
       $ntp_service_label = 'org.ntp.ntpd'
     }
